@@ -5,6 +5,7 @@ STARTUP EVENTS - things that will run once when the game starts
 RUNNING PROCESSES - things that will run every frame
 */
 
+//TODO: Add tracer into game, make it simply a rectangle following the ball at first then code functionality in for extenderse.
 
 //Import Code From Other JS Modules
 //Sound functions and classes
