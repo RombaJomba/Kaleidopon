@@ -100,7 +100,7 @@ body {
 }
 
 /*for the Tracer. TODO: correct size and color, change "step."*/
-.progress-line {
+.tracer {
     display: inline-block;
     background-color: gray;
     height: 24px;
