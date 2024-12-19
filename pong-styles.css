@@ -98,3 +98,28 @@ body {
 #right-score {
   right: 1%;
 }
+
+/*for the Tracer. TODO: correct size and color, change "step."*/
+.progress-line {
+    display: inline-block;
+    background-color: gray;
+    height: 24px;
+    z-index: 1;
+}
+
+.step {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+    top: -24px;
+}
+
+.progress {
+    background-color: silver;
+    display: block;
+    width: 0px;
+    height: 24px;
+    z-index: 2;
+}
