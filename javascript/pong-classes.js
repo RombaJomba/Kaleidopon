@@ -47,6 +47,32 @@ export class Ball {
     this.inertialTransfer = 0.25; //multiplier for velocity.y transfer from paddle
     this.htmlElement = null; //element on HTML page
   }
+  //these are for tracer: returns values
+  getPosition(){
+    return this.position;
+  }
+  getDirection(){
+    return this.direction;
+  }
+}
+
+export class BallTracer {
+  //grab ball's values
+  constructor(
+    ball
+  ){
+    this.position = ball.getPosition();
+    this.direction = ball.getDirection();
+  }
+  //follow the ball
+  follow(ball){
+    this.position = ball.getPosition();
+  }
+  //update the velocity
+  set(ball){
+    this.position = ball.getPosition();
+    this.direction = ball.getDirection();
+  }
 }
 
 export class Paddle {
