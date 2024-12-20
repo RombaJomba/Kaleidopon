@@ -72,7 +72,7 @@ body {
 
 @keyframes blinker {
   50% {
-    background-color: white;
+    opacity: 0;
   }
 }
 @keyframes paddleBlinker {
@@ -91,7 +91,7 @@ body {
 .ball {
   width: 15px;
   height: 15px;
-  background-color: yellow;
+  background-color: white;
   border-radius: 10px;
   position: absolute;
   left: 50px;
