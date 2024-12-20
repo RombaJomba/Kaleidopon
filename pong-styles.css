@@ -18,16 +18,16 @@ body {
 }
 
 #left-paddle {
-  background-color: yellow;
+  background-color: cyan;
   left: 10px;
   height: 25px;
-  animation: blinker 0.1s step-start infinite;
+  animation: paddleBlinker 0.1s step-start infinite;
 }
 
 #right-paddle {
-  background-color: yellow;
+  background-color: cyan;
   right: 10px;
- animation: blinker 0.1s step-start infinite;
+ animation: paddleBlinker 0.1s step-start infinite;
 }
 
 #instructions {
@@ -68,11 +68,16 @@ body {
   font-weight: 700;
 }
 
-/* blinker*/
+/* blinkers*/
 
 @keyframes blinker {
   50% {
     background-color: white;
+  }
+}
+@keyframes paddleBlinker {
+  50% {
+    background-color: magenta;
   }
 }
 
