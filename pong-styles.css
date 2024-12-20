@@ -71,8 +71,8 @@ body {
 /* blinker*/
 
 @keyframes blinker {
-  100% {
-    color: white;
+  50% {
+    background-color: white;
   }
 }
 
