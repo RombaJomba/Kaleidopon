@@ -18,13 +18,15 @@ body {
 }
 
 #left-paddle {
+  animation: blinker 0.1s step-start infinite;
   background-color: yellow;
   left: 10px;
   height: 25px;
 }
 
 #right-paddle {
-  background-color: black;
+  animation: blinker 0.1s step-start infinite;
+  background-color: yellow;
   right: 10px;
  
   
@@ -78,6 +80,7 @@ body {
   width: 15px;
   height: 15px;
   background-color: yellow;
+  animation: blinker 1s step-start infinite;
   border-radius: 10px;
   position: absolute;
   left: 50px;
@@ -125,9 +128,6 @@ body {
     z-index: 2;
 }
 /* blinker*/
-.blink {
-  animation: blinker 1s step-start infinite;
-}
 
 @keyframes blinker {
   50% {
