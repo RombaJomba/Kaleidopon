@@ -7,12 +7,13 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: black;
 }
 #game {
   margin: 4px;
   border: 5px solid black;
-  left: 0;
   position: absolute;
+  top: 200px; left: 200px;
   background-image: url("tunnel.gif");
   background-size: cover;
 }
