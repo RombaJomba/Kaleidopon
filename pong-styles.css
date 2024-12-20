@@ -18,18 +18,16 @@ body {
 }
 
 #left-paddle {
-  animation: blinker 0.1s step-start infinite;
   background-color: yellow;
   left: 10px;
   height: 25px;
+  animation: blinker 0.1s step-start infinite;
 }
 
 #right-paddle {
-  animation: blinker 0.1s step-start infinite;
   background-color: yellow;
   right: 10px;
- 
-  
+ animation: blinker 0.1s step-start infinite;
 }
 
 #instructions {
@@ -70,6 +68,15 @@ body {
   font-weight: 700;
 }
 
+/* blinker*/
+
+@keyframes blinker {
+  100% {
+    color: white;
+  }
+}
+
+
 .paddle {
   top: 0;
   width: 5px;
@@ -80,11 +87,11 @@ body {
   width: 15px;
   height: 15px;
   background-color: yellow;
-  animation: blinker 1s step-start infinite;
   border-radius: 10px;
   position: absolute;
   left: 50px;
   top: 50px;
+  animation: blinker 1s step-start infinite;
 }
 
 .score {
@@ -126,11 +133,4 @@ body {
     width: 0px;
     height: 24px;
     z-index: 2;
-}
-/* blinker*/
-
-@keyframes blinker {
-  50% {
-    color: white;
-  }
 }
