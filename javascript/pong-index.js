@@ -19,7 +19,7 @@ import {
   playDeferredSounds
 } from "./pong-audio.js";
 //Defaults for game objects
-import { Game, Ball, Paddle } from "./pong-classes.js";
+import { Game, Ball, Paddle, BallTracer } from "./pong-classes.js";
 //Game Events
 import {
   GameEvent,
@@ -47,6 +47,7 @@ game.htmlElement = document.getElementById("game");
 var ball = new Ball();
 ball.htmlElement = document.getElementById("ball");
 ballReset();
+var tracer = new BallTracer(ball);
 var paddleArray = [];
 var paddleLeft = new Paddle();
 paddleLeft.controller = "player1";
@@ -148,6 +149,7 @@ var update = function() {
     updateComputer();
     paddlesUpdate();
     updateBall();
+    updateTracer();
     ballCheckMax();
     gameProcess();
     eventsReset();
@@ -172,6 +174,12 @@ function updateBall() {
   var newBallPos = {
     x: ball.position.x + ball.direction.x,
     y: ball.position.y + ball.direction.y
+  };
+
+  function updateTracer() {
+    //FILLER: IMPORT CLASS AND STUFF
+    follow(ball);
+    //spawnClone(); This should create a clone of the ball wherever the ball was just at.
   };
 
   //Wall Collisions
@@ -329,9 +337,9 @@ function controlUpdate() {
       //cursor-up
       paddleRight.direction.y = paddleRight.speed * -1; //move up
     }
-    //Toggle Computer Control
+    //Toggle Computer Control !!!!!!!!!!!!!!!!!!!!!!!!!!!!
     //1
-    if (value === 49 && computerPlayer.changedManual === false) {
+    if (true) {
       game.computerState =
         (game.computerState + 1) % game.computerDifficulty.length;
       computerPlayer.changedManual = true; //computer player state is changed
