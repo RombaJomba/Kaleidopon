@@ -53,9 +53,9 @@ paddleLeft.controller = "player1";
 paddleLeft.htmlElement = document.getElementById("left-paddle");
 paddleArray.push(paddleLeft);
 //If the game is too hard, make your paddle bigger, but don't go too big!
-paddleLeft.size.y = 75;
+paddleLeft.size.y = 50;
 var paddleRight = new Paddle();
-paddleRight.size.y = 75;
+paddleRight.size.y = 50;
 paddleRight.controller = "player2";
 paddleRight.htmlElement = document.getElementById("right-paddle");
 paddleArray.push(paddleRight);
