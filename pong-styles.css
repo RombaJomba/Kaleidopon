@@ -91,10 +91,10 @@ body {
 }
 
 .ball {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   position: absolute;
   left: 50px;
   top: 50px;
