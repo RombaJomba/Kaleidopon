@@ -331,7 +331,7 @@ function controlUpdate() {
     }
     //Toggle Computer Control
     //1
-    if (true) {
+    if (value === 49 && computerPlayer.changedManual === false) {
       game.computerState =
         (game.computerState + 1) % game.computerDifficulty.length;
       computerPlayer.changedManual = true; //computer player state is changed
